@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Deivid de Souza Silva">
+    <link rel="stylesheet" href="cad_style.css">
+    <title>Formulário</title>
+</head>
+<body>
+
+    <section class="titulo-img" >
+        <h1>Cadastro de Usúario</h1>
+    </section>
+
+    <main class="form">
+        <form class="form-conteudo">
+            <fieldset class="from-conteudo-obrigatorio">
+                <legend><b>OBRIGATORIO*</b></legend class="legenda-obrigatorio">
+                <div class="form-conjunto">
+                    <label for="nome"><p class="plabel"> Primero Nome* </p></label>
+                    <input type="text" name="nome" id="nome" placeholder="Digite o seu nome" required>
+                </div>
+                <div class="form-conjunto">
+                    <label for="seg-nome"><p class="plabel"> Segundo Nome* </p></label>
+                    <input type="text" name="seg-nome" id="seg-nome" placeholder="Digite o seu sobre nome" required>
+                </div>
+                <div class="form-conjunto">
+                    <label for="email"><p class="plabel">Email*</p></label>
+                    <input type="email" name="email" id="email" placeholder="Exemplo@email.com" required>
+                </div>
+                <div class="form-conjunto">
+                    <label for="login"><p class="plabel">Nome de Usuário*</p></label>
+                    <input type="text" name="login" id="login" placeholder="Nome usado no login" required>
+                </div>
+                <div class="form-conjunto">
+                    <label for="senha"><p class="plabel">Senha*</p></label>
+                    <input type="password" name="senha" id="senha" placeholder="Digite sua senha" required>
+                </div>
+                <div class="form-conjunto">
+                    <label for="comf-senha"><P class="plabel">Comfirmar Senha*</P></label>
+                    <input type="password" name="comf-senha" id="comf-senha" placeholder="Digite sua senha novamente" required>
+                </div>
+            </fieldset>
+            <fieldset class="from-conteudo-op">
+                <legend>Opcional</legend class="legenda-op">
+                <div class="form-conjunto" id="Dtel">
+                    <label for="tel"><p class="plabel">telefone</p></label>
+                    <input type="tel" name="tel" id="tel" placeholder="(XX) XXXX-XXXX">
+                </div>
+                <div class="form-conjunto" id="Ddia">
+                    <label class="ldia" for="dia"><p class="plabel">Dia</p></label>
+                    <input type="number" name="dia" id="dia" min="1" max="31" placeholder="Data">
+                </div>
+                <div class="form-conjunto" id="Dmes">
+                    <label><p class="plabel">Mês</p></label>
+                    <select id="mes">
+                        <option selected disabled>De</option>
+                        <option value="01">janeiro</option>
+                        <option value="02">fevereiro</option>
+                        <option value="03">março</option>
+                        <option value="04">abril</option>
+                        <option value="05">maio</option>
+                        <option value="06">junho</option>
+                        <option value="07">julho</option>
+                        <option value="08">agosto</option>
+                        <option value="09">setembro</option>
+                        <option value="10">outubro</option>
+                        <option value="11">novembro</option>
+                        <option value="12">dezembro</option>
+                    </select>
+                    <p class="data-txt">Data de nacimento</p>
+                </div>
+                <div class="form-conjunto" id="Dano">
+                    <label class="lano" for="ano"><p  class="plabel">Ano</p></label>
+                    <input type="number" name="ano" id="ano" min="1910" max="2022" placeholder="Nacimento">
+                </div>
+                <div class="form-conjunto" id="Dgenero">
+                    <label><p class="plabel">Genêro</p></label>
+                    <select id="genero">
+                        <option selected disabled>None...</option>
+                        <option value="M">Masculino</option>
+                        <option value="F">Feminino</option>
+                        <option value="NF">Não dizer</option>
+                        <option value="OU">Outro</option>
+                    </select>
+                </div>
+            </fieldset>
+            <div class="form-conteudo-bt">
+                <button class="form-bt"><a href="login.html">Voltar</a></button>
+                <input type="submit" class="form-bt">
+            </div>
+        </form>
+    </main>
+
+</body>
+</html>
